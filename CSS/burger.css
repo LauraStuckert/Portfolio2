@@ -1,0 +1,132 @@
+/* Lidt almindelig styling på html, li og a */
+/* step 2 */
+
+li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+
+/* Almindelig styling på header og .navbar */
+/* step 3 */
+header {
+    border-bottom: 1px solid #e2e8f0;
+    background-color: #F2D8CE;
+    margin: 0;
+    padding: 0;
+  }
+.navbar{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 1rem 1.5rem;
+    overflow: hidden;
+}
+
+/*Styling af dropdown menu*/
+
+.drop_down{
+    display: inline-block;
+}
+
+.drop_content{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #F2D8CE;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.drop_content li {
+    float: none;
+}
+
+/* Hamburgeren laves gøres usynlig */
+/* step 4 */
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #1F47BF;
+  }
+
+/* ... go gøres usynlig */
+/* step 5 */
+.hamburger {
+    display: none;
+  }
+
+/* Styling af menuen */
+/* step 6 */
+.nav_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav_punkt {
+    margin-left: 5rem;
+  }
+
+  .drop_down {
+    margin-left: 5rem;
+  }
+  
+  .nav_link {
+    font-size: 1rem;
+    font-weight: 200;
+  }
+  
+  .nav_link:hover {
+    border-bottom: #1F47BF solid;
+  }
+
+/* step 7 - min max width er 1000 px for at undgå at navnene i menuen bliver underlige inden burger */
+@media (max-width: 1000px) {
+    .nav_menu {
+      position: fixed;
+      left: -100%;
+      top: 5rem;
+      flex-direction: column;
+      width: 100%;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+  
+    .nav_menu.active {
+      left: 0;
+    }
+  
+    .nav_punkt {
+      margin: 2.5rem 0;
+    }
+
+    .drop_down{
+        margin: 2.5rem 0;
+    }
+  
+    .hamburger {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .hamburger.active .bar:nth-child(1) {
+      translate: 0 8px;
+      rotate: 45deg;
+    }
+  
+    .hamburger.active .bar:nth-child(3) {
+      translate: 0 -8px;
+      rotate: -45deg;
+    }
+  }
