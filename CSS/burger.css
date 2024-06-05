@@ -28,19 +28,22 @@ header {
 
 .drop_down{
     display: inline-block;
+    position: relative;
 }
 
 .drop_content{
     display: none;
     position: absolute;
     z-index: 1;
-    background-color: #F2D8CE;
+    background-color: white;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    right: 0;
 }
 
-.drop_content li {
-    float: none;
+/* Show the drop down menu on hover */
+.drop_down:hover .drop_content {
+    display: block;
 }
 
 /* Hamburgeren laves gøres usynlig */
