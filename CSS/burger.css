@@ -93,25 +93,26 @@ header {
     .nav_menu {
       position: fixed;
       left: -100%;
-      top: 5rem;
+      top: 200px;
       flex-direction: column;
       width: 100%;
-      border-radius: 10px;
       text-align: center;
       transition: 0.3s;
-      box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+      background-color: transparent; /* Gennemsigtig baggrund */
+      z-index: 1;
     }
   
     .nav_menu.active {
       left: 0;
+      background-color: white; /* Hvid baggrund når aktiv */
     }
   
     .nav_punkt {
-      margin: 2.5rem 0;
+      margin: 20px 0;
     }
 
     .drop_down{
-        margin: 2.5rem 0;
+        margin: 20px 0;
     }
   
     .hamburger {

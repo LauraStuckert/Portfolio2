@@ -1,0 +1,28 @@
+.learning_list{
+    margin: 20px;
+}
+
+.temabeskrivelse{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+        text-align: left;
+    }
+}
+
+@media (min-width:800px){
+.temabeskrivelse{
+   display: grid;
+   grid-template-columns: 3fr 1fr; 
+}
+}
+
+@media (max-width:799px){
+    .temabeskrivelse{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}

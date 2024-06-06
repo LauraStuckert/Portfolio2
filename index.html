@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LauDesign</title>
-    <link rel="stylesheet" href="CSS/layout.css" />
+    <title>Forside</title>
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/burger.css" />
+    <link rel="stylesheet" href="CSS/index.css">
   </head>
   <body>
     <header>
@@ -50,8 +50,74 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section class="herosection"></section>
+      <section class="section_general">
+        <h2><span class="line"></span>Five Learnings<span class="line"></span></h2>
+        <p>Programmer som jeg er blevet introduceret for på 1. semester</p>
+        <div class="img_learnings">
+          <img src="Images/Index/Illustrator logo.svg" alt="Adobe Illustrator logo">
+          <img src="Images/Index/figmalogo 1.svg" alt="Figma logo">
+          <img src="Images/Index/VSClogo 1.svg" alt="Visual Studio code logo">
+          <img src="Images/Index/premireproklogo 1.svg" alt="Adobe Premiere Pro logo">
+          <img src="Images/Index/filezillalogo 1.svg" alt="File Zilla logo">
+        </div>
+      </section>
+      <section class="section_general">
+        <h2><span class="line"></span>Mine projekter<span class="line"></span></h2>
+        <div class="carousel">
+          <button class="prev" onclick="prevSlide()">❮</button>
+          <div class="carousel_wrapper">
+            <div class="carousel-images">
+              <a href="Tema 2.html"><img src="Images/Index/T2.svg" alt="Billede tema 2"></a>
+              <div class="carousel-caption">T2: Grunlæggende UI // Website</div>
+            </div>
+            <div class="carousel-images">
+              <a href="Tema3.html"><img src="Images/Index/T3.svg" alt="Billede tema 3"></a>
+              <div class="carousel-caption">T3: Grunlæggende UX // Emnesite</div>
+            </div>
+            <div class="carousel-images">
+              <a href="Tema4.html"><img src="Images/Index/T4.svg" alt="Billede tema 4"></a>
+              <div class="carousel-caption">T4: Grunlæggende Animation // Spil</div>
+            </div>
+            <div class="carousel-images">
+              <a href="Tema5_passion.html"><img src="Images/Index/T5_1.svg" alt="Billede tema 5"></a>
+              <div class="carousel-caption">T5: Grunlæggende indhold // Passionssite</div>
+            </div>
+            <div class="carousel-images">
+              <a href="Tema5_virksomhed.html"><img src="Images/Index/T5_2.svg" alt="Billede tema 5"></a>
+              <div class="carousel-caption">T5: Grunlæggende indhold // Virksomhedssite</div>
+            </div>
+          </div>
+          <button class="next" onclick="nextSlide()">❯</button>
+        </div>
+      </section>
+    </main> 
+    <footer>
+      <div class="footer_mobil footer_desk">
+        <div class="footer_div">
+          <h3>LauDesign</h3>
+          <p>LauDesign er min portfoliosite, med projekter udarbejdet i løbet af min tid som multimediedesigner. Læs mere om mig her.</p>
+        </div>
+        <div class="footer_div">
+          <h3>Følg med her:</h3>
+          <img src="Images/instagram.svg" alt="Instagram ikon">
+          <img src="Images/facebook.svg" alt="Facebook ikon">
+        </div>
+        <div class="footer_div">
+          <h3>Kontakt:</h3>
+          <div class="footer_kontakt">
+            <img src="Images/user.svg" alt="Bruger ikon">
+            <p>Laura Hove Stuckert</p>
+            <img src="Images/mail.svg" alt="Mail ikon">
+            <p>last0003@stud.kea.dk</p>
+            <img src="Images/map-pin.svg" alt="Lokation ikon">
+            <p>Københavns Erhvervsakademi</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="Java/carousel.js"></script>
     <script src="Java/burger.js"></script>
-    <!-- <script src="Java/dropdownmenu.js"></script> -->
   </body>
 </html>
