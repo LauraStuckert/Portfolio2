@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tema 4</title>
-    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/generel.css" />
     <link rel="stylesheet" href="CSS/burger.css" />
     <link rel="stylesheet" href="CSS/index.css" />
-    <link rel="stylesheet" href="CSS/tema3.css" />
+    <link rel="stylesheet" href="CSS/temastyle.css" />
+    <link rel="icon" href="Images/Favicon.svg" type="image/svg+xml" />
   </head>
   <body>
     <header>
@@ -56,126 +57,344 @@
         <h1>Tema 4: Grundlæggende Animation</h1>
         <div class="temabeskrivelse">
           <p>
-            I tema 3, Grundlæggende UX, er vi blevet introduceret for
-            vigtigheden af brugernes oplevelse på digitale brugergrænseflader og
-            hvordan de interagerer med hjemmesiden (UI (user
-            interface)/brugergrænseflade). Vi er derfor blevet introduceret for
-            teorier, værktøjer og metoder der kan hjælpe os med at researche,
-            designe og teste digitale produkter. Dette har lært os at forstå
-            vigtigheden i samspillet mellem hjemmesiden og brugeren, så vores
-            designvalg og produktudvikling er baseret på konkrete indsigter fra
-            rigtige brugere over egne antagelser. <br /><br />Opgaven for dette
-            tema handlede om at vi skulle designe og udvikle vores eget website,
-            baseret på et emne som vi interesserer os for. Jeg valgte at
-            fokusere på slow living og minimalisme, da det er noget jeg
-            praktiserer i mit personlige liv. Derfor kunne jeg mærke en indre
-            motivation og at jeg var inspireret til at komme i gang med opgaven.
-            På grund af temaet var fokus for denne opgave i høj grad på design-
-            og udviklingsprocessen i skabelsen af sitet og formidle
-            research/testsresultater. Opgaven er en videreudvikling på tema 2 og
-            vores eget website skulle derfor også kodes som responsivt design og
-            valideres. For ikke at gentage mig selv for meget, vil jeg derfor
-            fokusere på at præsentere 5 steps i min designproces og hvilke
-            læringer jeg har taget med herfra.
+            I tema 4, Grundlæggende Animation, er vi blevet præsenteret for
+            programmering med henblik på at designe, udvikle og kode et spil som
+            et dynamisk website. Det har været et omfattende tema over flere
+            uger som har inkluderet læring omkring ideudvikling, spildesign og
+            derefter kodning af spillet, hvor Javascript var et helt nyt
+            programmeringssprog som vi skulle lære. Formålet har været at lære
+            os at udvikle færdigheder i JavaScript og i Adobe illustrator, og
+            kombinere teori med praksis inden for spildesign og programmering,
+            som har givet os erfarring med at kode et spil helt fra bunden.
+            Dette har skabt en forståelse for, hvordan man engagerer brugerne
+            gennem brugergrænseflader, figurer, baggrunde og
+            kompositionsteknikker. Derudover hvordan man opbygger et spil med et
+            godt flow, med brug af diagrammer. Dette tema er endnu en
+            videreudvikling på de foregående temaer, hvilket betyder at vi har
+            skulle benytte vores viden fra UI og UX til at designe, udvikle og
+            teste. <br /><br />
+            I løbet af de fire uger i dette tema vil vi gradvist opbygge vores
+            eget interaktive animerede spil. Spillet er en simpel interaktiv
+            oplevelse, hvor brugeren kan interagere ved at klikke på "gode" og
+            "dårlige" elementer og optjene point eller miste liv. Vi starter med
+            at udvikle konceptet og alle de grafiske elementer i spillet og
+            lærer at gemme dem som SVG'er. Derefter bygger vi selve spilscenen
+            ved hjælp af HTML og CSS, animatorer elementerne og styrer
+            forskellige aspekter af spillet ved hjælp af JavaScript. Vi
+            implementerer funktioner til at optjene point, miste liv, tabe og
+            vinde spillet. Derudover arbejder vi med lyd, tips og tricks til
+            forbedring af spillet og afslutter temaet med en intern
+            præsentation, hvor vores spil testes af medstuderende og vi selv
+            tester deres spil, samtidig med at vi modtager feedback fra
+            underviserne.
           </p>
           <div class="learning_list">
-            <img src="Images/Tema3/Tjekliste.svg" alt="Tjekliste for tema 3" />
+            <img src="Images/Tema4/Tjekliste.svg" alt="Tjekliste for tema 3" />
           </div>
         </div>
       </section>
       <div class="timeline">
-        <div class="start-date">Februar 2024</div>
+        <div class="start-date">2. april 2024</div>
         <div class="timeline-line">
           <div class="timeline-arrow"></div>
         </div>
-        <div class="end-date">Marts 2024</div>
+        <div class="end-date">26. april 2024</div>
       </div>
       <section class="section_general">
         <h2>
-          <span class="line"></span>Step 1: Deskresearch<span
+          <span class="line"></span>Step 1: Konceptudvikling<span
             class="line"
           ></span>
         </h2>
+        <p>
+          Det første step i min proces mod at udvikle et spil, handlede om at
+          finde ud af, hvad konceptet skulle være for spillet og hvad ideen bag
+          ved spillet skulle være. Til dette benyttede jeg mig af en idé
+          genererings øvelse, hvor jeg nedskrev en masse verber, setting og
+          elementer i fri brainstorm. Med hjælp fra en "random generator" på
+          nettet udvalgte jeg forskellige sammensætninger som bestod af et
+          verbum, en setting og et element.
+        </p>
         <div class="step_container">
           <div class="step_beskrivelse">
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde
-              consectetur ut repellat blanditiis quos ab quae perspiciatis
-              veniam recusandae? Quia quam assumenda voluptatum molestias
-              deleniti esse dicta reiciendis suscipit est.
+              Jeg valgte at gå med sammensætningen: at liste, pizza og butik.
+              <br /><br />
+              Herfra begyndte jeg at bygge videre på idéen med at tegne skitser
+              og afslutningsvis udarbejde en papir prototype som jeg filmede.
+              Udarbejdelsen af papir prototypen var en god øvelse for mig i
+              forhold til at skabe et overblik over mit, og tvang mig til i
+              højere grad at tænke det fra start til slut. <br />
+            </p>
+            <div class="citat">
+              <p>
+                "Jeg finder det sjovt at se tilbage på denne film, da det er
+                åbenlyst at jeg ikke anede hvad de ventede mig i den videre
+                proces med Adobe Illustrator og kodning i JavaScript. Filmen er
+                derfor god til at få et indblik i, hvilke kompromisser jeg har
+                været nødsaget til at gå på undervejs, for at komme det der
+                minder om i mål."
+              </p>
+            </div>
+            <p>
+              Efterfølgende udarbejdede jeg et aktivitetsdiagram, som også var
+              et godt værktøj til at få tænkt spillet igennem fra ende til
+              anden, og en god måde at sætte sig i brugerens spil. Det gjorde
+              mig klogere på, hvilken rejse jeg havde til formål at bringe
+              brugeren på. Dette aktivitetsdiagram er ikke blevet opdateret
+              efter at jeg har ændret i mit spilkoncept.
             </p>
           </div>
           <div class="step_billeder">
-            <img src="Images/Test-billede.svg" alt="Test billede" />
-            <img src="Images/Test-billede.svg" alt="Test billede" />
-            <img src="Images/Test-billede.svg" alt="Test billede" />
-            <img src="Images/Test-billede.svg" alt="Test billede" />
+            <img
+              src="Images/Tema4/Step1_1.svg"
+              alt="Billede fra udviklingsprocessen"
+            />
+            <img
+              src="Images/Tema4/Step1_2.svg"
+              alt="Billede fra udviklingsprocessen"
+            />
+            <img
+              src="Images/Tema4/Step1_3.svg"
+              alt="Billede fra udviklingsprocessen"
+            />
+            <img
+              src="Images/Tema4/Step1_4.svg"
+              alt="Billede fra udviklingsprocessen"
+            />
           </div>
         </div>
       </section>
       <section class="section_general">
         <h2>
-          <span class="line"></span>Step 2: Figma Jam<span class="line"></span>
-        </h2>
-        <div class="step_container">
-          <div class="step_billeder">
-            <img src="Images/Test-billede.svg" alt="Test billede" />
-            <img src="Images/Test-billede.svg" alt="Test billede" />
-            <img src="Images/Test-billede.svg" alt="Test billede" />
-            <img src="Images/Test-billede.svg" alt="Test billede" />
-          </div>
-          <div class="step_beskrivelse">
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde
-              consectetur ut repellat blanditiis quos ab quae perspiciatis
-              veniam recusandae? Quia quam assumenda voluptatum molestias
-              deleniti esse dicta reiciendis suscipit est.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="section_general">
-        <h2>
-          <span class="line"></span>Step 3: Brugerindsigter<span
+          <span class="line"></span>Step 2: Udvikling af spildesign<span
             class="line"
           ></span>
         </h2>
+        <p>
+          Efter en præsentation af stilarter i skolen, valgte jeg at gå videre
+          med stilarten Matmisjonen, da jeg fandt den meget passende omkring mit
+          ønske om at opbygge et barnligt univers omkring mit spil. Det tiltalte
+          mig at farverne var mere matte og fine, og at stilen generelt giver et
+          mere retro indtryk. Derudover så er det en stil som jeg synes passer
+          godt til at jeg gerne ville skitsere i hånden.
+        </p>
         <div class="step_container">
+          <div class="step_billeder">
+            <img
+              src="Images/Tema4/Step2_1.svg"
+              alt="Billeder fra den kreative designproces"
+            />
+            <img
+              src="Images/Tema4/Step2_2.svg"
+              alt="Billeder fra den kreative designproces"
+            />
+            <img
+              src="Images/Tema4/Step2_3.svg"
+              alt="Billeder fra den kreative designproces"
+            />
+            <img
+              src="Images/Tema4/Step2_4.svg"
+              alt="Billeder fra den kreative designproces"
+            />
+          </div>
           <div class="step_beskrivelse">
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde
-              consectetur ut repellat blanditiis quos ab quae perspiciatis
-              veniam recusandae? Quia quam assumenda voluptatum molestias
-              deleniti esse dicta reiciendis suscipit est.
+              Efter valg af stil begyndte jeg at udarbejde moodboards for mit
+              spil ved hjælp at pinterest. Jeg benyttede Pinterest til både at
+              blive inspireret omkring farver, men også til, hvordan jeg gerne
+              ville tegne mine elementer, mine figurer og spillets
+              baggrundsdesign. Mit farvevalg er med afsæt i ønsket om at skabe
+              et fantasiunivers som appellerer til børn (som er min primære
+              målgruppe). <br /><br />
+              Fordi at børn er min primære målgruppe, valgte jeg at gå med
+              kraftige farver og at bruge mange forskellige farver i mit spil.
+              Jeg udtrak farve temaer fra inspirationskilder på Pinterest vha.
+              Adobe Color og samlede disse i min style tile. Jeg synes at de
+              mange forskellige farver spiller godt sammen og kan være med til
+              at tiltrække målgruppens opmærksomhed. Derudover så er det et
+              bevidst valg at farverne afviger fra den virkelig verden for at
+              understøtte følelsen af et fantasi og barnligt univers.
+              <br /><br />
+              Mine elementer er skitseret i hånden inden det er tegnet i Adobe
+              Illustrator.
             </p>
-          </div>
-          <div class="step_billeder">
-            <img src="Images/Test-billede.svg" alt="Test billede" />
-            <img src="Images/Test-billede.svg" alt="Test billede" />
-            <img src="Images/Test-billede.svg" alt="Test billede" />
-            <img src="Images/Test-billede.svg" alt="Test billede" />
           </div>
         </div>
       </section>
       <section class="section_general">
         <h2>
-          <span class="line"></span>Step 4: Tests<span class="line"></span>
+          <span class="line"></span>Step 3: Første møde med Adobe
+          Illustrator<span class="line"></span>
         </h2>
+        <p>
+          Dette er også mit første møde med at arbejde i Adobe Illustrator (AI),
+          og jeg fandt det som en stor hjælp at indsætte mine skitser at tegne
+          efter. Det primære værktøj som er benyttet er vektor streger til at
+          formgive mine elementer. Både figurer, spilelementer, knapper og
+          baggrunde er tegnet i AI.
+        </p>
+        <div class="step_container">
+          <div class="step_beskrivelse">
+            <p>
+              Jeg har undervejs været nødsaget til at gå på stilmæssige
+              kompromisser med tegningerne af mine elementer, da jeg ikke
+              lykkedes med at tegne de "ujævne" linjer i AI, som ellers er et
+              udtryk i Matmisjon-stilen som jeg godt kan lide. For at bevare et
+              blødt udtryk har jeg gjort de fleste streger og linjer
+              <br /><br />
+              Fra at have tegnet elementerne i AI, lærte vi at indsætte dem på
+              et artboard og eksportere dem til SVG-filer, som senere kunne
+              implementeres i kodning og i vores spil. I denne del af processen
+              har jeg flere gange eksporteret om og rettet til ift. forgrund,
+              baggrund, mellemgrund, elementer og knapper. <br /><br />
+              Mit design og min stil kan siges at være meget fladt, da jeg ikke
+              har anvendt skygger, perspektiver, kontraster eller andre
+              virkemidler som kan bidrage med mere dybde til spilskærmene og liv
+              til figurerne. Dette er noget jeg ønsker at udfordrer mig selv med
+              en anden gang vi skal arbejde i AI, da dette forløb har givet mig
+              grundlæggende kendskab til programmet, som jeg aldrig har arbejdet
+              i før.
+            </p>
+          </div>
+          <div class="step_billeder">
+            <img src="Images/Tema4/Step3_1.svg" alt="Billeder fra AI" />
+            <img src="Images/Tema4/Step3_2.svg" alt="Billeder fra AI" />
+            <img src="Images/Tema4/Step3_3.svg" alt="Billeder fra AI" />
+            <img src="Images/Tema4/Step3_4.svg" alt="Billeder fra AI" />
+          </div>
+        </div>
+      </section>
+      <section class="section_general">
+        <h2>
+          <span class="line"></span>Step 4: JavaScript pt. 1<span
+            class="line"
+          ></span>
+        </h2>
+        <p>
+          Kodningen af spillet har budt på at kombinere HTML, CSS og Javascript
+          for at få knapper til at fungere, skærme til at komme frem og
+          forsvinde, og for at kode selve spillet. Kodningen af selve spille
+          indebærer at jeg skulle gøre mine elementer klikbare og at de skulle
+          falde tilfældigt ned fra skærmen. <br /><br />Jeg fandt denne del af
+          processen meget udfordrende og generelt JavaScript svært at arbejde i.
+        </p>
         <div class="step_container">
           <div class="step_billeder">
-            <img src="Images/Test-billede.svg" alt="Test billede" />
-            <img src="Images/Test-billede.svg" alt="Test billede" />
-            <img src="Images/Test-billede.svg" alt="Test billede" />
-            <img src="Images/Test-billede.svg" alt="Test billede" />
+            <img
+              src="Images/Tema4/Step4_1.svg"
+              alt="Billeder og citater fra proces med JavaScript"
+            />
+            <img
+              src="Images/Tema4/Step4_2.svg"
+              alt="Billeder og citater fra proces med JavaScript"
+            />
+            <img
+              src="Images/Tema4/Step4_3.svg"
+              alt="Billeder og citater fra proces med JavaScript"
+            />
+            <img
+              src="Images/Tema4/Step4_4.svg"
+              alt="Billeder og citater fra proces med JavaScript"
+            />
           </div>
           <div class="step_beskrivelse">
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde
-              consectetur ut repellat blanditiis quos ab quae perspiciatis
-              veniam recusandae? Quia quam assumenda voluptatum molestias
-              deleniti esse dicta reiciendis suscipit est.
+              Jeg er stadig ikke fuldt tilfreds med min random position på
+              spilelementerne, da de falder oveni hinanden. Derudover oprettede
+              jeg i processen nye artboards til alle mine spilelementer og
+              eksporterede dem på ny, for at få dem i samme størrelse.
+              <br /><br />
+              I JavaScript indebar kodningen også at tilføje funktioner til
+              spilelementerne, så man enten mistede liv eller optjente point,
+              ved at klikke på elementerne. Jeg lykkedes med at kode ind at
+              spillet tæller point op på de rigtige spilelementer og at brugeren
+              mister liv, når man klikker på de forkerte elementer. <br />
+              Derudover så er jeg også lykkedes med at kode ind, at min kok
+              vender sig rundt med ryggen til, når spillet starter. Dette skulle
+              være min form for timer, så spillet slutter når kokken vender sig
+              rundt og ser tyven der stjæler pizza. <br /><br />
+              Mit spil er ikke færdigkodet og det ikke er muligt at vinde eller
+              tabe spillet, og på den måde komme videre til en slutskærm. Jeg er
+              lykkedes med at implementere en startskærm og en spilleskærm.
+              Kodningen for dette med at hide en skærm, vil jeg have benyttet
+              for at få en slutskærm frem.
             </p>
           </div>
+        </div>
+      </section>
+      <section class="section_general">
+        <h2>
+          <span class="line"></span>Step 5: JavaScript pt. 2<span
+            class="line"
+          ></span>
+        </h2>
+        <p>
+          Et andet vigtigt element som mit spil ikke er i mål med er at tiden
+          tæller ned og som udløser at spillet kan vindes/tabes. For at kunne
+          gøre dette vil jeg være nødsaget til at designe en timer og kode det
+          ind i JavaScript. I Javascript vil jeg skulle kode både hvad der sker
+          hvis brugeren gennemfører spillet inden tiden er gået, hvad der sker
+          hvis brugeren mister alle liv inden tiden er gået og om brugeren har
+          gennemført eller tabt spillet når tiden er gået. <br><br>
+             Det vil optimere brugerens spiloplevelse, hvis jeg havde fået
+              inkorporeret lyde og baggrundsmusik i spillet. Jeg havde tanker
+              omkring at kokken fx skulle råbe en masse på italiensk når han
+              vendte sig rundt og opdagede tyven. <br>Musikken når spilleren skal
+              trykke start skal være i stemningen af at liste og at man er på
+              vej til at gøre noget forbudt. Undervejs i spillet var lydene
+              planlagt til at være kokken der nynner med ryggen til, og hygger
+              sig med at lave sin pizza.
+        </p>
+        <div class="step_container">
+          <div class="step_beskrivelse">
+            <p>
+              I JavaScript indebar kodningen også at tilføje funktioner til
+              spilelementerne, så man enten mistede liv eller optjente point,
+              ved at klikke på elementerne. Jeg lykkedes med at kode ind at
+              spillet tæller point op på de rigtige spilelementer og at brugeren
+              mister liv, når man klikker på de forkerte elementer. <br />
+              Derudover så er jeg også lykkedes med at kode ind, at min kok
+              vender sig rundt med ryggen til, når spillet starter. Dette skulle
+              være min form for timer, så spillet slutter når kokken vender sig
+              rundt og ser tyven der stjæler pizza. <br><br>
+              Jeg udarbejdede også 3 test af mit spil og min hjemmeside undervejs: <br>
+              <ol><li>5 sekunders test på style tile </li><li>Tænke høj test på hjemmesiden</li><li>BERT test af mit spil (selvom det ikke er færdigt) </li></ol> </p>
+              <p>I min tænke-højt test fik jeg lidt feedback på at det var svært at se teksten på den orange/gule baggrund. Men i mit spørgeskema test fik jeg svar på at farverne virkelig gjorde sig bemærket og noget som brugerne hæftede sig ved. 
+              Dette hjalp mig med at beslutte at bevare farverne på mit site. <br><br>
+	            Derudover gav spørgeskemaundersøgelsen mig indsigt i, at brugerne manglede information om spillet ift., hvad formålet er og hvordan man skal spille det. På baggrund af dette valgte jeg at tilføje infotekst på forsiden. 
+              </p>
+          </div>
+          <div class="step_billeder">
+            <img
+              src="Images/Tema4/Step5_1.svg"
+              alt="Billeder og citater fra proces med JavaScript"
+            />
+            <img
+              src="Images/Tema4/Step5_2.svg"
+              alt="Billeder og citater fra proces med JavaScript"
+            />
+            <img
+              src="Images/Tema4/Step5_3.svg"
+              alt="Billeder og citater fra proces med JavaScript"
+            />
+            <img
+              src="Images/Tema4/Step5_4.svg"
+              alt="Billeder og citater fra proces med JavaScript"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="section_general">
+        <h2>
+          <span class="line"></span>4 ting jeg vil huske fremadrettet<span class="line"></span>
+        </h2>
+        <div class="img_learnings">
+          <img src="Images/Tema4/Learning1.svg" alt="En ting jeg har lært til næste gang">
+          <img src="Images/Tema4/Learning2.svg" alt="En ting jeg har lært til næste gang">
+          <img src="Images/Tema4/Learning3.svg" alt="En ting jeg har lært til næste gang">
+          <img src="Images/Tema4/Learning 4.svg" alt="En ting jeg har lært til næste gang">
+          <img src="Images/Tema4/Learning 5.svg" alt="En ting jeg har lært til næste gang">
         </div>
       </section>
     </main>
@@ -185,23 +404,45 @@
           <h3>LauDesign</h3>
           <p>
             LauDesign er min portfoliosite, med projekter udarbejdet i løbet af
-            min tid som multimediedesigner. Læs mere om mig her.
+            min tid som multimediedesigner. Læs mere om mig
+            <a href="Om mig.html">her</a>.
           </p>
         </div>
         <div class="footer_div">
           <h3>Følg med her:</h3>
-          <img src="Images/instagram.svg" alt="Instagram ikon" />
-          <img src="Images/facebook.svg" alt="Facebook ikon" />
+          <a href="https://www.instagram.com/laura_stuckert/" target="_blank"
+            ><img src="Images/instagram.svg" alt="Instagram ikon"
+          /></a>
+          <a href="https://www.facebook.com/laura.stuckert/" target="_blank"
+            ><img src="Images/facebook.svg" alt="Facebook ikon"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/laura-hove-stuckert-711480221/"
+            target="_blank"
+            ><img src="Images/linkedin.svg" alt="LinkedIn Ikon"
+          /></a>
         </div>
         <div class="footer_div">
           <h3>Kontakt:</h3>
           <div class="footer_kontakt">
             <img src="Images/user.svg" alt="Bruger ikon" />
             <p>Laura Hove Stuckert</p>
-            <img src="Images/mail.svg" alt="Mail ikon" />
-            <p>last0003@stud.kea.dk</p>
-            <img src="Images/map-pin.svg" alt="Lokation ikon" />
-            <p>Københavns Erhvervsakademi</p>
+            <a href="mailto:last0003@stud.kea.dk"
+              ><img src="Images/mail.svg" alt="Mail ikon"
+            /></a>
+            <a href="mailto:last0003@stud.kea.dk"
+              ><p>last0003@stud.kea.dk</p></a
+            >
+            <a
+              href="https://www.google.com/maps/place/Københavns+Erhvervsakademi"
+              target="_blank"
+              ><img src="Images/map-pin.svg" alt="Lokation ikon"
+            /></a>
+            <a
+              href="https://www.google.com/maps/place/Københavns+Erhvervsakademi"
+              target="_blank"
+              ><p>Københavns Erhvervsakademi</p></a
+            >
           </div>
         </div>
       </div>

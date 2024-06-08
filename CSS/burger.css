@@ -2,135 +2,136 @@
 /* step 2 */
 
 li {
-    list-style: none;
-  }
-  a {
-    text-decoration: none;
-  }
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #1f47bf;
+}
 
 /* Almindelig styling på header og .navbar */
 /* step 3 */
 header {
-    border-bottom: 1px solid #e2e8f0;
-    background-color: #F2D8CE;
-    margin: 0;
-    padding: 0;
-  }
-.navbar{
-    display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 1rem 1.5rem;
-    overflow: hidden;
+  border-bottom: 1px solid #e2e8f0;
+  background-color: #f2d8ce;
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  overflow: hidden;
 }
 
 /*Styling af dropdown menu*/
 
-.drop_down{
-    display: inline-block;
-    position: relative;
+.drop_down {
+  display: inline-block;
+  position: relative;
 }
 
-.drop_content{
-    display: none;
-    position: absolute;
-    z-index: 1;
-    background-color: white;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    right: 0;
+.drop_content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  right: 0;
 }
 
 /* Show the drop down menu on hover */
 .drop_down:hover .drop_content {
-    display: block;
+  display: block;
 }
 
 /* Hamburgeren laves gøres usynlig */
 /* step 4 */
 .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    transition: all 0.3s ease-in-out;
-    background-color: #1F47BF;
-  }
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #1f47bf;
+}
 
 /* ... go gøres usynlig */
 /* step 5 */
 .hamburger {
-    display: none;
-  }
+  display: none;
+}
 
 /* Styling af menuen */
 /* step 6 */
 .nav_menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .nav_punkt {
-    margin-left: 5rem;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .drop_down {
-    margin-left: 5rem;
-  }
-  
-  .nav_link {
-    font-size: 1rem;
-    font-weight: 200;
-  }
-  
-  .nav_link:hover {
-    border-bottom: #1F47BF solid;
-  }
+.nav_punkt {
+  margin-left: 5rem;
+}
+
+.drop_down {
+  margin-left: 5rem;
+}
+
+.nav_link {
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.nav_link:hover {
+  border-bottom: #1f47bf 1px solid;
+}
 
 /* step 7 - min max width er 1000 px for at undgå at navnene i menuen bliver underlige inden burger */
 @media (max-width: 1000px) {
-    .nav_menu {
-      position: fixed;
-      left: -100%;
-      top: 200px;
-      flex-direction: column;
-      width: 100%;
-      text-align: center;
-      transition: 0.3s;
-      background-color: transparent; /* Gennemsigtig baggrund */
-      z-index: 1;
-    }
-  
-    .nav_menu.active {
-      left: 0;
-      background-color: white; /* Hvid baggrund når aktiv */
-    }
-  
-    .nav_punkt {
-      margin: 20px 0;
-    }
-
-    .drop_down{
-        margin: 20px 0;
-    }
-  
-    .hamburger {
-      display: block;
-      cursor: pointer;
-    }
-  
-    .hamburger.active .bar:nth-child(2) {
-      opacity: 0;
-    }
-  
-    .hamburger.active .bar:nth-child(1) {
-      translate: 0 8px;
-      rotate: 45deg;
-    }
-  
-    .hamburger.active .bar:nth-child(3) {
-      translate: 0 -8px;
-      rotate: -45deg;
-    }
+  .nav_menu {
+    position: fixed;
+    left: -100%;
+    top: 200px;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    background-color: transparent; /* Gennemsigtig baggrund */
+    z-index: 1;
   }
+
+  .nav_menu.active {
+    left: 0;
+    background-color: white; /* Hvid baggrund når aktiv */
+  }
+
+  .nav_punkt {
+    margin: 20px 0;
+  }
+
+  .drop_down {
+    margin: 20px 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    translate: 0 8px;
+    rotate: 45deg;
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    translate: 0 -8px;
+    rotate: -45deg;
+  }
+}

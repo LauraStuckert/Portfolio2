@@ -1,0 +1,123 @@
+.learning_list {
+  margin: 20px;
+}
+
+.temabeskrivelse {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    text-align: left;
+    /* margin: 60px; */
+  }
+}
+.step_beskrivelse {
+  p {
+    text-align: left;
+  }
+  li {
+    font-family: "Raleway";
+    line-height: 1.5;
+    font-weight: 600;
+  }
+}
+.step_container {
+  margin: 20px;
+}
+
+.step_billeder {
+  gap: 10px;
+  img {
+    width: 100%;
+  }
+}
+
+.citat {
+  p {
+    text-align: center;
+    font-style: italic;
+    font-size: 12px;
+  }
+}
+
+/* .section_funfacts {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: start;
+} */
+
+.img_funfacts {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+  p {
+    margin: 0;
+    border: 1px solid #b74636;
+    font-family: Playfair Display;
+    padding: 5px;
+  }
+  img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media (min-width: 800px) {
+  .temabeskrivelse {
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr;
+    img {
+      width: 100%;
+    }
+  }
+  .step_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .step_billeder {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    justify-content: center;
+  }
+  .section_funfacts {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: start;
+  }
+}
+
+@media (max-width: 799px) {
+  .temabeskrivelse {
+    display: grid;
+    grid-template-columns: 1fr;
+    img {
+      width: 40%;
+    }
+  }
+
+  p {
+    font-size: 12px;
+  }
+  .step_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    p {
+      font-size: 12px;
+    }
+  }
+  .step_billeder {
+    display: flex;
+  }
+
+  .img_funfacts {
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: auto;
+    }
+  }
+}
