@@ -11,7 +11,15 @@ a {
   color: #1f47bf;
 }
 
+.herosection {
+  width: auto;
+  height: auto;
+}
+
 @media (max-width: 799px) {
+  .herosection {
+    margin: 40px;
+  }
   .img_learnings {
     flex-direction: column;
     align-items: center;
@@ -94,5 +102,8 @@ a {
   button.prev,
   button.next {
     display: none;
+  }
+  .herosection {
+    margin: 40px;
   }
 }
